@@ -85,7 +85,7 @@ const Menu = ({ history }) => (
               style={isActive(history, '/signup')}
               to='/signup'
             >
-              Signout
+              Signup
             </Link>
           </li>
         </Fragment>
