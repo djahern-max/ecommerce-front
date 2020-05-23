@@ -37,8 +37,8 @@ const Home = () => {
 
   return (
     <Layout
-      title='Test Test'
-      description='Node React E-commerce App'
+      title='Ply Furniture'
+      description='Hand crafted, high-quality furniture constructed from plywood.'
       className='container-fluid'
     >
       <Search />
