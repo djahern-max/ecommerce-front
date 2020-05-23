@@ -93,7 +93,7 @@ const Dashboard = () => {
   return (
     <Layout
       title='Dashboard'
-      description={`G'day ${name}!`}
+      description={`Hello ${name}!`}
       className='container'
     >
       <div className='row'>
