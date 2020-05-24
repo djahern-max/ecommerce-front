@@ -99,42 +99,48 @@ const Shop = () => {
   return (
     <Layout
       title='Shop Page'
-      description='Search and find books of your choice'
+      description='Search and find furniture of your choice'
       className='container-fluid'
     >
-      <div className='row'>
-        <div className='col-3'>
-          <h4>Filter by categories</h4>
-          <ul>
-            <Checkbox
-              categories={categories}
-              handleFilters={(filters) => handleFilters(filters, 'category')}
-            />
-          </ul>
-
-          <h4>Filter by price range</h4>
-          <div>
-            <RadioBox
-              prices={prices}
-              handleFilters={(filters) => handleFilters(filters, 'price')}
-            />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+            <h4>Filter by categories</h4>
+            <ul>
+              <Checkbox
+                categories={categories}
+                handleFilters={(filters) => handleFilters(filters, 'category')}
+              />
+            </ul>
+            <div className=''>
+              <h4>Filter by price range</h4>
+              <div>
+                <RadioBox
+                  prices={prices}
+                  handleFilters={(filters) => handleFilters(filters, 'price')}
+                />
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* <div className='col'>{JSON.stringify(filteredResults)}</div> */}
-        <div className='col-8'>
-          <h2 className='mb-4'>Products</h2>
-          <div className='row'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+            <h2 className='mb-4'>Products</h2>
+            {/* <div className='row'> */}
             {filteredResults.map((product, i) => (
-              <div key={i} className='col-4 mb-3'>
+              <div key={i} className=''>
                 <Card product={product} />
               </div>
             ))}
           </div>
-          <hr />
-          {loadMoreButton()}
         </div>
       </div>
+
+      <hr />
+      {loadMoreButton()}
     </Layout>
   );
 };

@@ -45,15 +45,13 @@ const Home = () => {
 
       <div className='container'>
         <div className='row'>
-          <div className='col-xs-12 col-sm-8 col-md-12 col-lg-8 col-xl-10'>
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
             <h2 className='mb-4'>New Arrivals</h2>
-            {/* <div className='row'> */}
             {productsByArrival.map((product, i) => (
               <div key={i} className=''>
                 <Card product={product} />
               </div>
             ))}
-            {/* </div> */}
           </div>
         </div>
       </div>
@@ -62,16 +60,13 @@ const Home = () => {
 
       <div className='container'>
         <div className='row'>
-          <div className='col-xs-12 col-sm-8 col-md-12 col-lg-8 col-xl-10'>
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
             <h2 className='mb-4'>Best Sellers</h2>
-            {/* <div className='row'> */}
             {productsBySell.map((product, i) => (
               <div key={i} className=''>
                 <Card product={product} />
               </div>
             ))}
-
-            {/* </div> */}
           </div>
         </div>
       </div>
