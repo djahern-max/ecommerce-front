@@ -40,7 +40,7 @@ const Product = (props) => {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-8'>
+        <div className='col-4'>
           {product && product.description && (
             <Card product={product} showViewProductButton={false} />
           )}
