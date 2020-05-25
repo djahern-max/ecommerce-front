@@ -43,9 +43,9 @@ const Home = () => {
     >
       <Search />
 
-      <div className='container'>
-        <div className='row'>
-          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+      <div className='row'>
+        <div className='container mb-3'>
+          <div className='container-fluid mb-3'>
             <h2 className='mb-4'>New Arrivals</h2>
             {productsByArrival.map((product, i) => (
               <div key={i} className=''>
@@ -58,9 +58,9 @@ const Home = () => {
 
       <br />
 
-      <div className='container'>
-        <div className='row'>
-          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+      <div className='row'>
+        <div className='container mb-3'>
+          <div className='container-fluid mb-3'>
             <h2 className='mb-4'>Best Sellers</h2>
             {productsBySell.map((product, i) => (
               <div key={i} className=''>
