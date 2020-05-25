@@ -61,8 +61,12 @@ const AdminDashboard = () => {
       className='container'
     >
       <div className='row'>
-        <div className='col-3'>{adminLinks()}</div>
-        <div className='col-9'>{adminInfo()}</div>
+        <div className='container mb-2'>
+          <div className='container-fluid mb-3'>
+            <div className='col-4'>{adminInfo()}</div>
+            <div className='col-4'>{adminLinks()}</div>
+          </div>
+        </div>
       </div>
     </Layout>
   );

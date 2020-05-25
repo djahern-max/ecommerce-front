@@ -36,11 +36,11 @@ const ManageProducts = () => {
   return (
     <Layout
       title='Manage Products'
-      description='Perform CRUD on products'
+      description='Update or Remove Products'
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-12'>
+        <div className='container'>
           <h2 className='text-center'>Total {products.length} products</h2>
           <hr />
           <ul className='list-group'>
@@ -65,6 +65,7 @@ const ManageProducts = () => {
           <br />
         </div>
       </div>
+      {/* </div> */}
     </Layout>
   );
 };
