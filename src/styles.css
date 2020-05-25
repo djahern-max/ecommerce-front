@@ -135,3 +135,9 @@
 .padding {
   padding: 10px;
 }
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+}
