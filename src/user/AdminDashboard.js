@@ -63,8 +63,14 @@ const AdminDashboard = () => {
       <div className='row'>
         <div className='container mb-2'>
           <div className='container-fluid mb-3'>
-            <div className='col-4'>{adminInfo()}</div>
-            <div className='col-4'>{adminLinks()}</div>
+            <div>{adminInfo()}</div>
+            <div className='row'>
+              <div className='container mb-2'>
+                <div className='container-fluid mb-3'>
+                  <div>{adminLinks()}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
