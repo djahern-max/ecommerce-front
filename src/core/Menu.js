@@ -93,7 +93,6 @@ const Menu = ({ history }) => (
 
       {isAuthenticated() && (
         <li className='nav-item'>
-          <i className='fas fa-hand-peace'></i>
           <span
             className='nav-link hide-sm'
             style={{ cursor: 'pointer', color: '#ffffff' }}
@@ -103,7 +102,7 @@ const Menu = ({ history }) => (
               })
             }
           >
-            Signout
+            <i className='fas fa-sign-out-alt'></i>
           </span>
         </li>
       )}
