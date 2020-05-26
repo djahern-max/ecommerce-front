@@ -93,6 +93,7 @@ const Menu = ({ history }) => (
 
       {isAuthenticated() && (
         <li className='nav-item'>
+          <i className='fas fa-hand-peace'></i>
           <span
             className='nav-link hide-sm'
             style={{ cursor: 'pointer', color: '#ffffff' }}
