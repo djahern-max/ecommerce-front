@@ -40,14 +40,14 @@ const Product = (props) => {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-4'>
-          {product && product.description && (
-            <Card product={product} showViewProductButton={false} />
-          )}
-        </div>
+        <div className='container mb-2'>
+          <div className='container-fluid mb-3'>
+            {product && product.description && (
+              <Card product={product} showViewProductButton={false} />
+            )}
+          </div>
 
-        <div className='col-4'>
-          <h4>Related products</h4>
+          <h4>Related Products</h4>
           {relatedProduct.map((p, i) => (
             <div className='mb-3' key={i}>
               <Card product={p} />
