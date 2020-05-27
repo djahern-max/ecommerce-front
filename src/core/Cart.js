@@ -45,25 +45,14 @@ const Cart = () => {
       description='Manage your cart items.  Add remove checkout or continue shopping'
       className='container-fluid'
     >
-      {/* <div className='row'> */}
-
-      {/* <div className='col-6'> */}
-
       <div className='row'>
         <div className='container mb-2'>
           <div className='container-fluid mb-3'>
-            {/* <hr /> */}
             <br />
-            {/* </div> */}
 
-            {/* <div className='col-6'> */}
-            {/* <h2 className='mb-4'>Cart Summary:</h2> */}
             {items.length > 0 ? showItems(items) : noItemsMessage()}
             <br />
             <Checkout products={items} />
-            {/* </div> */}
-
-            {/* </div> */}
           </div>
         </div>
       </div>
