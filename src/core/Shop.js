@@ -10,7 +10,6 @@ const Shop = () => {
   const [myFilters, setMyFilters] = useState({
     filters: { category: [], price: [] },
   });
-
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(false);
   const [limit, setLimit] = useState(6);
@@ -72,7 +71,8 @@ const Shop = () => {
   }, []);
 
   const handleFilters = (filters, filterBy) => {
-    console.log('SHOP', filters, filterBy);
+    // console.log("SHOP", filters, filterBy);
+    // console.log(filteredResults);
     const newFilters = { ...myFilters };
     newFilters.filters[filterBy] = filters;
 
@@ -112,6 +112,9 @@ const Shop = () => {
                 handleFilters={(filters) => handleFilters(filters, 'category')}
               />
             </ul>
+            {/* 
+            <div className='col-8'>{JSON.stringify(myFilters)}</div> */}
+
             <div className=''>
               <h4>Filter by price range</h4>
               <div>
@@ -137,6 +140,7 @@ const Shop = () => {
             ))}
           </div>
         </div>
+        {/* <div className='col-8'>{JSON.stringify(filteredResults)}</div> */}
       </div>
 
       <hr />
